@@ -1,13 +1,24 @@
+
 # Templates of Capstone Project Report 
 
-* * *
+## Installation
 
-Three kinds of templates are in this repository:
-- [LaTeX](https://github.com/a-mhamdi/graduation-report/tree/main/LaTeX)
-- [LyX](https://github.com/a-mhamdi/graduation-report/tree/main/LyX)
-- [MS-WORD](https://github.com/a-mhamdi/graduation-report/tree/main/MS-WORD)
+A quick guide on how to install LaTeX distribution depending on the OS your machine is running.
 
-If you need to download only a particular folder, not the entire repository, please consider using the following URL: [https://download-directory.github.io/](https://download-directory.github.io/)
+<center>
 
-<!-- Make sure to checkout to the desired branch when downloading your preferred template. -->
+[<img src = "imgs/Linux.png" alt = "On how to install TeX Live" width="150">](https://www.tug.org/texlive/)
+[<img src = "imgs/Mac.png" alt = "On how to install Mac TeX" width="145">](https://www.tug.org/mactex/)
+[<img src = "imgs/Win.png" alt = "On how to install proTeXt" width="150">](https://www.tug.org/protext/)
 
+</center>
+
+LyX – The Document Processor
+
+-   _WYSIWYG Document Editor:_ [LyX](http://www.lyx.org/ "Link to LyX")
+
+Below are links to two useful apps in order to draw schemes in Tikz and to manage bibliography DB through semi wysiwyg editors.
+
+-   _Tikz Editor:_ [TikzEdt](http://www.tikzedt.org/ "Link to TikzEdt")
+
+-   _Bibliography Manager:_ [JabRef](http://www.jabref.org/ "Link to JabRef")
