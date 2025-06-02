@@ -7,13 +7,6 @@
 \textclass book
 \begin_preamble
 % DO NOT ALTER THIS PREAMBLE!!!
-%
-%This preamble is designed to ensure that the document prints
-% out as advertised. If you mess with this preamble,
-% parts of the document may not print out as expected.  If you
-% have problems LaTeXing this file, please contact 
-% the documentation team
-% email: lyx-docs@lists.lyx.org
 
 \usepackage[ec]{aeguill}
 
@@ -27,9 +20,18 @@
 
 \usepackage{charter}
 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.pathmorphing,patterns,shadows.blur,shapes.geometric, positioning}
+
+\usepackage{xcolor}
+
+\definecolor{AI}{RGB}{200, 200, 50}
+\definecolor{EI}{RGB}{25, 25, 80}
+\definecolor{EL}{RGB}{25, 80, 25}
+
 \renewcommand{\thesubsubsection}{\alph{subsubsection})}
 
-\usepackage[Rejne]{fncychap} % Sonny Lenny Glenn Conny Rejne Bjarne Bjornstrup
+\usepackage[Bjornstrup]{fncychap} % Sonny Lenny Glenn Conny Rejne Bjarne Bjornstrup
 
 \ChTitleVar{\Huge\bfseries}
 \ChNameVar{\large\bfseries}
@@ -63,12 +65,15 @@
 \usepackage{epstopdf}
 
 \usepackage{parskip}
-\usepackage{placeins} % \FloatBarrier
 
 \usepackage{lipsum}
 % Added by lyx2lyx
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
+
+\usepackage{changepage}
+
+\usepackage{xstring}
 \end_preamble
 \options english,frenchb,intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,square,utf8
 \use_default_options true
@@ -103,11 +108,12 @@ tcolorbox
 \bibtex_command default
 \index_command default
 \float_placement tbh
+\float_alignment class
 \paperfontsize 11
 \spacing onehalf
 \use_hyperref true
-\pdf_title "Graduation Internship Report"
-\pdf_author "A. Mhamdi"
+\pdf_title "Graduation Report"
+\pdf_author "ISET Bizerte | DEP. of EE"
 \pdf_subject "***"
 \pdf_keywords "***"
 \pdf_bookmarks true
@@ -198,8 +204,9 @@ selectlanguage{english}
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 COVER PAGE
@@ -211,6 +218,7 @@ COVER PAGE
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -218,512 +226,1095 @@ status open
 
 
 \backslash
-begin{titlepage}
+def
+\backslash
+auteur{Firstname Lastname 
+\backslash
+emph{(SPEC)} 
+\backslash
+quad et 
+\backslash
+quad Firstname Lastname 
+\backslash
+emph{(SPEC)}}
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+
 \backslash
-newcommand{
+def
 \backslash
-HRule}{
-\backslash
-rule{
-\backslash
-linewidth}{0.35mm}}
+ref{ELNI 01-26}
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+
 \backslash
-begin{flushleft}
+def
+\backslash
+titre{PROJECT TITLE}
 \end_layout
 
 \begin_layout Plain Layout
 
-          {
+
 \backslash
-scriptsize
+def
+\backslash
+org{XYZ Company}
 \end_layout
 
 \begin_layout Plain Layout
 
-            
+
+\backslash
+def
+\backslash
+president{Mr.(s.) Chairman}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+rapporteur{Mr.(s.) Reviewer}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+encadrantISET{Mr.(s.) Advisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+encadrantIndustriel{Mr.(s.) Co-advisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+dateSoutenance{16 juin 2026}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%% DO NOT ALTER %%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+StrLeft{
+\backslash
+ref}{2}[
+\backslash
+titlepagecolor]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{titlepagecolor}{named}{
+\backslash
+titlepagecolor}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-2.5cm}{-2cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-
+\backslash
+topskip}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[remember picture,
+ overlay,
+ shorten >= -10pt,
+ node distance=1cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[align=center] at (10,
+ 2) {
+\backslash
+scriptsize 
 \backslash
 textbf{
 \backslash
-large{Republic of Tunisia}}
-\backslash
-
-\backslash
-
+large{Republic of Tunisia}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-vspace*{
-\backslash
-stretch{0.025}}
-\end_layout
 
-\begin_layout Plain Layout
-
-            
+\backslash
+node[align=center] at (10,
+ 1) {
+\backslash
+scriptsize 
 \backslash
 textbf{
 \backslash
-large{Ministry of Higher Education and Scientific Research}}
-\backslash
-
-\backslash
-
+large{Ministry of Higher Education and Scientific Research}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-vspace*{
-\backslash
-stretch{0.025}}
-\end_layout
 
-\begin_layout Plain Layout
-
-            
+\backslash
+node[align=center] at (10,
+ 0) {
+\backslash
+scriptsize 
 \backslash
 textbf{
 \backslash
-large{General Directorate of Technological Studies}}
-\backslash
-
-\backslash
-
+large{General Directorate of Technological Studies}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-vspace*{
-\backslash
-stretch{0.025}}
-\end_layout
 
-\begin_layout Plain Layout
-
-            
+\backslash
+node[align=center] at (10,
+ -1) {
+\backslash
+scriptsize 
 \backslash
 textbf{
 \backslash
-large{Higher Institute of Technological Studies of Bizerte}}
-\backslash
-
-\backslash
-
+large{Higher Institute of Technological Studies of Bizerte}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-vspace*{
-\backslash
-stretch{0.025}}
-\end_layout
 
-\begin_layout Plain Layout
-
-            
+\backslash
+node[align=center] at (10,
+ -2) {
+\backslash
+scriptsize 
 \backslash
 textbf{
 \backslash
-large{Department of Electrical Engineering}}}
+large{Department of Electrical Engineering}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-    
-\backslash
-end{flushleft}
+   
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+
 \backslash
-vspace*{
-\backslash
-stretch{0.035}}
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
+node at (10,-3.5) (pfe) {
 \backslash
 textbf{
 \backslash
 textsc{
 \backslash
-huge{Capstone Project}}}
-\backslash
+huge{Capstone Project}}}};
+\end_layout
 
-\backslash
+\begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
 
-        
+
 \backslash
-vspace*{
+node[below=1cm of pfe] {
 \backslash
-stretch{0.025}}
+large for the diploma};
 \end_layout
 
 \begin_layout Plain Layout
 
-        for the diploma 
-\backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-vspace*{
-\backslash
-stretch{0.015}}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
+node[below=2cm of pfe] {
 \backslash
 textbf{
 \backslash
 textsc{
 \backslash
-large{License In Electrical Engineering}}}
-\backslash
-
-\backslash
-
+large{License In Electrical Engineering}}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+
 \backslash
-end{center}
+node[below=3cm of pfe] {
+\backslash
+large prepared by};
 \end_layout
 
 \begin_layout Plain Layout
 
-    
-\backslash
-vspace*{
-\backslash
-stretch{0.035}}
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-        prepared by
-\backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-vspace*{
-\backslash
-stretch{0.01}}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
+node[below=4cm of pfe] {
 \backslash
 textbf{{
 \backslash
-large *** 
+large 
 \backslash
-textsc{***}}}
+textsc{
 \backslash
-
-\backslash
-
+auteur}}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-        
+
 \backslash
-vspace*{
+node[below=6cm of pfe] {
 \backslash
-stretch{0.01}}
+large Project title:};
 \end_layout
 
 \begin_layout Plain Layout
 
-    
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-vspace*{
-\backslash
-stretch{0.02}}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-HRule 
-\backslash
 
 \backslash
-[0.3cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-        
+node[below=7.5cm of pfe,
+ text width=.85
+\backslash
+textwidth,
+ align=center,
+ below] (projet) {
 \backslash
 Huge{
 \backslash
-textbf{PROJECT TITLE}}
+textbf{
 \backslash
-
-\backslash
-[0.2cm]
+titre}}};
 \end_layout
 
 \begin_layout Plain Layout
 
-        
-\backslash
-HRule 
-\backslash
 
 \backslash
-% [1.5cm]
+node[below=1cm of projet] {
+\backslash
+large Completed at {
+\backslash
+sc 
+\backslash
+org}};
 \end_layout
 
 \begin_layout Plain Layout
 
-        
+
 \backslash
-vspace*{
+node[below=2.5cm of projet,
+ align=center,
+ text width=
 \backslash
-stretch{0.015}}
+textwidth] {%
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+  
 \backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-        Presented on ** June **** in Bizerte before the examination board composed of:
-\backslash
-
-\backslash
-
+begin{tabular}{p{3cm}rl}
 \end_layout
 
 \begin_layout Plain Layout
 
     
 \backslash
-end{center}
+multicolumn{3}{c}{
+\backslash
+large Presented on 
+\backslash
+dateSoutenance
+\backslash
+ Bizerte before the examination board composed of:} 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
     
 \backslash
-begin{center}
+tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-        
+    ~ & 
 \backslash
-begin{tabular}{lll}
+textbf{
+\backslash
+large Chairman:}                & 
+\backslash
+textsc{
+\backslash
+large  
+\backslash
+president}
 \end_layout
 
 \begin_layout Plain Layout
 
-			
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-textbf{Chairman:}          & 
-\backslash
-textsc{*** ****} & ***,
- 
-\backslash
-textsc{****}
-\end_layout
-
-\begin_layout Plain Layout
-
-            
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
+    ~ & 
+\backslash
+textbf{
+\backslash
+large Reviewer:}              & 
+\backslash
+textsc{
+\backslash
+large  
+\backslash
+rapporteur}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-textbf{Reviewer:}          & 
-\backslash
-textsc{*** ****} & ***,
- 
-\backslash
-textsc{****}
-\end_layout
-
-\begin_layout Plain Layout
-
-            
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
+    ~ & 
+\backslash
+textbf{
+\backslash
+large Advisor:} & 
+\backslash
+textsc{
+\backslash
+large  
+\backslash
+encadrantISET} 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
-\backslash
-textbf{Advisor:} 		  & 
-\backslash
-textsc{*** ****} & ***,
- 
-\backslash
-textsc{****}
-\end_layout
-
-\begin_layout Plain Layout
-
-            
+    
 \backslash
 tabularnewline
 \end_layout
 
 \begin_layout Plain Layout
 
-            
+    ~ & 
 \backslash
-tabularnewline
+textbf{
+\backslash
+large Co-advisor:}       & 
+\backslash
+textsc{
+\backslash
+large  
+\backslash
+encadrantIndustriel}
 \end_layout
 
 \begin_layout Plain Layout
 
-            
+  
 \backslash
-textbf{Co-advisor:}        & 
-\backslash
-textsc{*** ****} & ***,
- 
-\backslash
-textsc{***}
+end{tabular}};
 \end_layout
 
 \begin_layout Plain Layout
 
-        
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[left] (logo) at (15.75,
+ -23) {
+\backslash
+includegraphics[width=3cm]{images/ISETBZ.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% 
+\backslash
+node[right] at (11,
+ -22) {
+\backslash
+includegraphics[width=3cm]{images/HOST.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[align=center,
+ left=of logo] {%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{|c|c|c|}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+multirow{3}{*}{
+\backslash
+bf Reference} & Dep.
+ & Electrical Engineering 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+cline{2-3}
+\end_layout
+
+\begin_layout Plain Layout
+
+    & A.Y.
+ & 2025--2026 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+cline{2-3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+    & N° & 
+\backslash
+ref 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 end{tabular}
 \end_layout
 
 \begin_layout Plain Layout
 
-    
-\backslash
-end{center}
+};
 \end_layout
 
 \begin_layout Plain Layout
 
-    
-\backslash
-sloppy
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{titlepage}
+node[above=.5cm of projet]{
+\backslash
+noindent
+\backslash
+makebox[0.6
+\backslash
+linewidth]{
+\backslash
+resizebox{0.6
+\backslash
+linewidth}{2pt}{$
+\backslash
+bullet$}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[below=.5cm of projet]{
+\backslash
+noindent
+\backslash
+makebox[0.6
+\backslash
+linewidth]{
+\backslash
+resizebox{0.6
+\backslash
+linewidth}{2pt}{$
+\backslash
+bullet$}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux1) at ([yshift=-15pt]current page.north east);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux2) at ([yshift=-380pt]current page.north east);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux3) at ([xshift=-4.2cm]current page.north east);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux4) at ([yshift=-140pt]current page.north east);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[titlepagecolor!80,line width=11pt,rounded corners=14pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux1) -- coordinate (a)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(225:4.8) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(-45:4.9) coordinate (b);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux3) -- (a) -- (aux1);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[opacity=0.7,titlepagecolor,shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (b) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(225:2.0) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(-45:2.0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[titlepagecolor,line width=7pt,rounded corners=10pt,shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (aux4) --
+\end_layout
+
+\begin_layout Plain Layout
+
+  ++(225:0.7) --
+\end_layout
+
+\begin_layout Plain Layout
+
+  ++(-45:0.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[titlepagecolor!60,line width=5pt,rounded corners=10pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux2) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(225:2.8) coordinate[pos=0.5] (c) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(-45:2.9);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw 
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux2) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    (c) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(135:2.3) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(45:2.3) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(-45:2.3) coordinate[pos=0.3] (d);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw 
+\end_layout
+
+\begin_layout Plain Layout
+
+    (d) -- +(45:0.9);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux5) at ([yshift=15pt]current page.south west);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux6) at ([yshift=380pt]current page.south west);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux7) at ([xshift=4.2cm]current page.south west);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+coordinate (aux8) at ([yshift=140pt]current page.south west);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[titlepagecolor!80,line width=11pt,rounded corners=14pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux5) -- coordinate (e)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(45:4.8) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(135:4.9) coordinate (f);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux7) -- (e) -- (aux5);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[opacity=0.7,titlepagecolor,shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (f) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(45:2.0) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(135:2.0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[titlepagecolor,line width=7pt,rounded corners=10pt,shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (aux8) --
+\end_layout
+
+\begin_layout Plain Layout
+
+  ++(45:0.7) --
+\end_layout
+
+\begin_layout Plain Layout
+
+  ++(135:0.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[titlepagecolor!80,line width=5pt,rounded corners=10pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw[shorten <= -8pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux6) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(45:2.8) coordinate[pos=0.5] (g) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(135:2.9);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw
+\end_layout
+
+\begin_layout Plain Layout
+
+    (aux6) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    (g) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(225:2.3) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(315:2.3) --
+\end_layout
+
+\begin_layout Plain Layout
+
+    ++(135:2.3) coordinate[pos=0.3] (h);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw
+\end_layout
+
+\begin_layout Plain Layout
+
+    (h) -- +(315:0.9);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
 \end_layout
 
 \end_inset
@@ -732,6 +1323,7 @@ end{titlepage}
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Note Note
 status open
 
@@ -746,8 +1338,9 @@ ACKNOWLEDGMENTS
 
 \begin_layout Standard
 \noindent
+\align center
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
