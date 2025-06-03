@@ -198,6 +198,7 @@ tcolorbox
 status open
 
 \begin_layout Plain Layout
+\align left
 Page de garde
 \end_layout
 
@@ -234,7 +235,7 @@ emph{(SPEC)}}
 \backslash
 def
 \backslash
-ref{ELNI 01-26}
+ref{EI 01-26}
 \end_layout
 
 \begin_layout Plain Layout
@@ -547,7 +548,8 @@ titre}}};
 \backslash
 node[below=1cm of projet] {
 \backslash
-large Effectué à {
+large Effectué à :
+ {
 \backslash
 sc 
 \backslash
@@ -579,7 +581,7 @@ large Soutenu le
 \backslash
 dateSoutenance
 \backslash
- à Bizerte devant le jury d'examen :} 
+ devant le jury :} 
 \backslash
 
 \backslash
@@ -710,7 +712,7 @@ end{tabular}};
 
 \begin_layout Plain Layout
 
-
+%%% 
 \backslash
 node[left] (logo) at (15.75,
  -23) {
@@ -736,8 +738,8 @@ includegraphics[width=3cm]{images/HOST.png}};
 
 
 \backslash
-node[align=center,
- left=of logo] {%
+node[align=center] at (10,
+ -24) {%
 \end_layout
 
 \begin_layout Plain Layout
@@ -758,9 +760,7 @@ hline
 
     
 \backslash
-multirow{3}{*}{
-\backslash
-bf Référence} & Dép.
+multirow{3}{*}{Référence} & Dép.
  & Génie 
 \backslash
 'Electrique 
@@ -1329,6 +1329,7 @@ end{adjustwidth}
 status open
 
 \begin_layout Plain Layout
+\align left
 Dédicaces et remerciements
 \end_layout
 
@@ -1963,7 +1964,7 @@ separation "7pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2020,29 +2021,7 @@ bf Mots cl
 \begin_layout Standard
 
 \lang british
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-par
-\backslash
-rule{
-\backslash
-linewidth}{.7pt}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset VSpace vfill*
+\begin_inset VSpace 2.5cm*
 \end_inset
 
 
@@ -2100,7 +2079,7 @@ separation "7pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2155,18 +2134,49 @@ bf Keywords:} ***;
 \begin_layout Standard
 
 \lang british
-\begin_inset ERT
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 
+\size footnotesize
+Campus Universitaire Menzel Abderrahmen BP n°65 Bizerte 7035 CP :
+ 7035 
+\end_layout
 
-\backslash
-par
-\backslash
-rule{
-\backslash
-linewidth}{.7pt}
+\begin_layout Plain Layout
+\align center
+
+\size footnotesize
+Tél :
+ +216 72 57 06 01/+216 72 57 06 00 - Fax :
+ +216 72 572 455 - Email :
+ isetbz@isetbz.rnu.tn
 \end_layout
 
 \end_inset
