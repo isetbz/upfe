@@ -1098,7 +1098,7 @@ coordinate (aux5) at ([yshift=15pt]current page.south west);
 
 
 \backslash
-coordinate (aux6) at ([yshift=380pt]current page.south west);
+coordinate (aux6) at ([yshift=295pt]current page.south west);
 \end_layout
 
 \begin_layout Plain Layout
@@ -1252,44 +1252,7 @@ draw[shorten <= -8pt]
 
   
 \backslash
-draw
-\end_layout
-
-\begin_layout Plain Layout
-
-    (aux6) --
-\end_layout
-
-\begin_layout Plain Layout
-
-    (g) --
-\end_layout
-
-\begin_layout Plain Layout
-
-    ++(225:2.3) --
-\end_layout
-
-\begin_layout Plain Layout
-
-    ++(315:2.3) --
-\end_layout
-
-\begin_layout Plain Layout
-
-    ++(135:2.3) coordinate[pos=0.3] (h);
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-draw
-\end_layout
-
-\begin_layout Plain Layout
-
-    (h) -- +(315:0.9);
+draw (aux6) -- (g);
 \end_layout
 
 \begin_layout Plain Layout
