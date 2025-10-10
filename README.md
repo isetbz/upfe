@@ -5,7 +5,7 @@
 
 ## Installation
 
-Download the binaries from [ProText](https://www.tug.org/protext/) or [MikTeX](https://miktex.org/) to install LaTeX distribution.
+Download the binaries from [ProText](https://www.tug.org/protext/) or [MikTeX](https://miktex.org/) to install **LaTeX** distribution.
 
 ## WYSIWYG Editors
 
