@@ -12,3 +12,5 @@ Download the binaries from [ProText](https://www.tug.org/protext/) or [MikTeX](h
 - [**LyX**](http://www.lyx.org/ "Link to LyX") to process documents;
 
 - [**JabRef**](http://www.jabref.org/ "Link to JabRef") to manage bibliography.
+
+- [**Sumatra PDF**](https://www.sumatrapdfreader.org/ "Link to Sumatra PDF") to view generated PDF documents.
