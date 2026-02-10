@@ -1025,8 +1025,9 @@ markboth{Bibliographie et sitographie}{}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "biblio/ma-biblio"
+bibfiles "ma-biblio"
 options "ieeetr-fr"
+encoding "default"
 
 \end_inset
 

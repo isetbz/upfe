@@ -438,7 +438,7 @@ encadrantIndustriel{Mr.(s.) Co-advisor}
 \backslash
 def
 \backslash
-dateSoutenance{16 juin 2026}
+dateSoutenance{16 june 2026}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1035,8 +1035,9 @@ markboth{Bibliography}{}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "biblio/my-biblio"
+bibfiles "my-biblio"
 options "ieeetr"
+encoding "default"
 
 \end_inset
 
