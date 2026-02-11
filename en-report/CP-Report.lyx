@@ -215,7 +215,7 @@ tcolorbox
 \maintain_unincluded_children no
 \language british
 \language_package default
-\inputencoding auto-legacy
+\inputencoding utf8
 \fontencoding T1
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -237,7 +237,7 @@ tcolorbox
 \bibtex_command default
 \index_command default
 \float_placement tbh
-\float_alignment class
+\float_alignment center
 \paperfontsize 11
 \spacing onehalf
 \use_hyperref true
@@ -375,7 +375,7 @@ emph{(SPEC)}}
 \backslash
 def
 \backslash
-ref{AII 01-26}
+ref{ELNI 01-26}
 \end_layout
 
 \begin_layout Plain Layout
@@ -998,10 +998,26 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
-backmatter
+appendix
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1045,7 +1061,7 @@ encoding "default"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage clearpage
 \end_inset
 
 
