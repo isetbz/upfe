@@ -209,7 +209,7 @@
 \end{tikzpicture}
 \end{adjustwidth}}
 \end_preamble
-\options english,frenchb,intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,square,utf8
+\options french,intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,square,utf8
 \use_default_options true
 \begin_modules
 logicalmkup
@@ -487,9 +487,8 @@ Dédicaces et remerciements
 
 \begin_layout Standard
 \noindent
-\align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -500,57 +499,48 @@ frontmatter
 
 \begin_layout Plain Layout
 
+
+\backslash
+thispagestyle{empty}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Flex Emph
+status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty} 
+Écrivez votre texte ici
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
 
-\backslash
-vspace*{
-\backslash
-stretch{1}}
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
 
-% Dedicaces 
+
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushright}     
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-emph{
-\backslash
-scriptsize{
-\backslash
-`A nos familles}} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushright}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -587,18 +577,19 @@ chapter*{Remerciements}
 thispagestyle{empty}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
-\begin_layout Plain Layout
-
-***
+\begin_layout Standard
+Écrivez votre texte ici
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -965,6 +956,7 @@ markboth{Conclusion générale}{}
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset ERT
 status collapsed
 
@@ -981,12 +973,13 @@ lipsum[1-5]
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 appendix
 \end_layout
@@ -1004,6 +997,7 @@ appendix
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset ERT
 status collapsed
 
@@ -1086,17 +1080,13 @@ status collapsed
 
 \lang british
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-selectlanguage{french}
-\backslash
-bfseries
-\backslash
-abstractname
+bfseries Résumé
 \end_layout
 
 \end_inset
@@ -1134,7 +1124,7 @@ status open
 
 \lang british
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1201,17 +1191,13 @@ status collapsed
 
 \lang british
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-selectlanguage{english}
-\backslash
-bfseries
-\backslash
-abstractname
+bfseries Abstract
 \end_layout
 
 \end_inset
@@ -1249,7 +1235,7 @@ status open
 
 \lang british
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
