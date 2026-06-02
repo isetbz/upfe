@@ -269,7 +269,7 @@ tcolorbox
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type numerical
-\biblio_style ieeetr
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -360,13 +360,13 @@ def
 \backslash
 auteur{Firstname Lastname 
 \backslash
-emph{(SPEC)} 
+emph{(OPT)} 
 \backslash
 quad and 
 \backslash
 quad Firstname Lastname 
 \backslash
-emph{(SPEC)}}
+emph{(OPT)}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -375,7 +375,7 @@ emph{(SPEC)}}
 \backslash
 def
 \backslash
-ref{ELNI 01-26}
+ref{ELNI 01-27}
 \end_layout
 
 \begin_layout Plain Layout
@@ -438,7 +438,7 @@ encadrantIndustriel{Mr.(s.) Co-advisor}
 \backslash
 def
 \backslash
-dateSoutenance{16 june 2026}
+dateSoutenance{15 june 2027}
 \end_layout
 
 \begin_layout Plain Layout
@@ -497,9 +497,8 @@ ACKNOWLEDGMENTS
 
 \begin_layout Standard
 \noindent
-\align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -510,58 +509,61 @@ frontmatter
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Flex Emph
+status open
+
+\begin_layout Plain Layout
+[WRITE YOUR TEXT HERE]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
 \begin_layout Plain Layout
 
 
 \backslash
-vspace*{
-\backslash
-stretch{1}}
-\end_layout
-
-\begin_layout Plain Layout
-
+clearpage 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-begin{flushright}
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-emph{
-\backslash
-scriptsize{
-\end_layout
-
-\begin_layout Plain Layout
-
-            ***}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushright}
-\end_layout
-
-\begin_layout Plain Layout
-
+thispagestyle{empty} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -575,25 +577,7 @@ clearpage
 
 
 \backslash
-thispagestyle{empty}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-clearpage
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-chapter*{Acknowledgments}
+chapter*{Acknowledgments} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -603,18 +587,19 @@ chapter*{Acknowledgments}
 thispagestyle{empty}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
-\begin_layout Plain Layout
-
-***.
+\begin_layout Standard
+[WRITE YOUR TEXT HERE]
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -734,19 +719,7 @@ Context and motivations
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1-2]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section*
@@ -792,19 +765,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section
@@ -812,19 +773,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section*
@@ -847,19 +796,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section
@@ -867,19 +804,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section*
@@ -901,19 +826,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section
@@ -921,19 +834,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \begin_layout Section*
@@ -977,14 +878,29 @@ markboth{General Conclusion}{}
 \end_layout
 
 \begin_layout Standard
+[WRITE YOUR TEXT HERE]
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-lipsum[1-5]
+appendix
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+theHchapter}{appendix.
+\backslash
+Alph{chapter}}
 \end_layout
 
 \end_inset
@@ -993,14 +909,12 @@ lipsum[1-5]
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
+\align center
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
-
-%
-\backslash
-appendix
+APPENDICES
 \end_layout
 
 \end_inset
@@ -1017,7 +931,7 @@ appendix
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1130,22 +1044,10 @@ separation "7pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \end_inset
@@ -1231,22 +1133,10 @@ separation "7pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \end_inset

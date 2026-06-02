@@ -349,13 +349,13 @@ def
 \backslash
 auteur{Prénom Nom 
 \backslash
-emph{(SPEC)} 
+emph{(OPT)} 
 \backslash
 quad et 
 \backslash
 quad Prénom Nom 
 \backslash
-emph{(SPEC)}}
+emph{(OPT)}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -364,7 +364,7 @@ emph{(SPEC)}}
 \backslash
 def
 \backslash
-ref{EI 01-26}
+ref{EI 01-27}
 \end_layout
 
 \begin_layout Plain Layout
@@ -427,7 +427,7 @@ encadrantIndustriel{M.(me) Encadrant Industriel}
 \backslash
 def
 \backslash
-dateSoutenance{16 juin 2026}
+dateSoutenance{15 juin 2027}
 \end_layout
 
 \begin_layout Plain Layout
@@ -522,7 +522,7 @@ thispagestyle{empty}
 status open
 
 \begin_layout Plain Layout
-Écrivez votre texte ici
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \end_inset
@@ -583,7 +583,7 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-Écrivez votre texte ici
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Standard
@@ -709,19 +709,7 @@ Contexte et motivations
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1-2]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section*
@@ -767,19 +755,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section
@@ -787,19 +763,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section*
@@ -822,19 +786,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section
@@ -842,19 +794,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section*
@@ -876,19 +816,7 @@ Section #1
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section
@@ -896,19 +824,7 @@ Section #2
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Section*
@@ -956,20 +872,7 @@ markboth{Conclusion générale}{}
 \end_layout
 
 \begin_layout Standard
-\noindent
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1-5]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \begin_layout Standard
@@ -984,15 +887,37 @@ status collapsed
 appendix
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+theHchapter}{appendix.
+\backslash
+Alph{chapter}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANNEXES
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -1007,9 +932,7 @@ status collapsed
 \backslash
 renewcommand
 \backslash
-bibname{Bibliographie 
-\backslash
-newline et sitographie}
+bibname{Bibliographie et sitographie}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1053,8 +976,6 @@ encoding "default"
 
 \begin_layout Standard
 \noindent
-
-\lang british
 \begin_inset ERT
 status collapsed
 
@@ -1071,14 +992,10 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset Flex Dynamic Color Box
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset ERT
 status collapsed
 
@@ -1100,8 +1017,6 @@ bfseries Résumé
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset Box Ovalbox
 position "t"
 hor_pos "c"
@@ -1121,21 +1036,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-
-\lang british
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[ÉCRIVEZ VOTRE TEXTE ICI]
 \end_layout
 
 \end_inset
@@ -1144,8 +1045,6 @@ lipsum[1]
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset ERT
 status collapsed
 
@@ -1173,8 +1072,6 @@ bf Mots cl
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset VSpace 2.5cm*
 \end_inset
 
@@ -1182,14 +1079,10 @@ bf Mots cl
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset Flex Dynamic Color Box
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset ERT
 status collapsed
 
@@ -1211,8 +1104,6 @@ bfseries Abstract
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset Box Ovalbox
 position "t"
 hor_pos "c"
@@ -1232,21 +1123,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-
-\lang british
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
-\end_layout
-
-\end_inset
-
-
+[WRITE YOUR TEXT HERE]
 \end_layout
 
 \end_inset
@@ -1255,8 +1132,6 @@ lipsum[1]
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset ERT
 status collapsed
 
@@ -1282,8 +1157,6 @@ bf Keywords:} ***;
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset VSpace vfill*
 \end_inset
 
@@ -1291,8 +1164,6 @@ bf Keywords:} ***;
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset Box ovalbox
 position "t"
 hor_pos "c"
