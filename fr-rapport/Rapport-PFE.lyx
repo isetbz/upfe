@@ -918,10 +918,6 @@ ANNEXES
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \noindent
 \begin_inset ERT
 status collapsed
@@ -1046,7 +1042,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1133,7 +1129,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
