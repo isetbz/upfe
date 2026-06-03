@@ -80,8 +80,24 @@
 
 \usepackage{xstring}
 
-\newcommand{\myTitlePage}[9]{%
-\StrLeft{#2}{2}[\titlepagecolor]
+\newcommand{\theJury}[5]{%
+  \begin{tabular}{crl}
+    \multicolumn{3}{c}{\large Soutenu le #1\ devant le jury :} \\
+    \tabularnewline
+    & \textbf{\large Président(e) :}                  & {\sc\large\begin{tabular}{l}#2\end{tabular}}
+    \tabularnewline
+    \tabularnewline
+    & \textbf{\large Rapporteur(e) :}                 & {\sc\large\begin{tabular}{l}#3\end{tabular}}
+    \tabularnewline
+    \tabularnewline
+    & \textbf{\large Encadrant(e)(s) académique(s) :} & {\sc\large\begin{tabular}{l}#4\end{tabular}}
+    \tabularnewline
+    \tabularnewline
+    & \textbf{\large Encadrant(e) externe :}          & {\sc\large\begin{tabular}{l}#5\end{tabular}}
+  \end{tabular}}
+
+\newcommand{\myTitlePage}[5]{%
+\StrLeft{#5}{2}[\titlepagecolor]
 \definecolor{titlepagecolor}{named}{\titlepagecolor}
 
 \thispagestyle{empty}
@@ -101,38 +117,23 @@
 \node[below=3cm of pfe] {\large  préparé par};
 \node[below=4cm of pfe] {\textbf{{\large \textsc{#1}}}};
 \node[below=6cm of pfe] {\large Titre du projet :};
-\node[below=7.5cm of pfe, text width=.85\textwidth, align=center, below] (projet) {\Huge{\textbf{#3}}};
-\node[below=1cm of projet] {\large Effectué à : {\sc #4}};
-\node[below=2.5cm of projet, align=center] {%
-  \begin{tabular}{crl}
-    \multicolumn{3}{c}{\large Soutenu le #9\ devant le jury :} \\
-    \tabularnewline
-    & \textbf{\large Président :}                & \textsc{\large  #5}
-    \tabularnewline
-    \tabularnewline
-    & \textbf{\large Rapporteur :}              & \textsc{\large  #6}
-    \tabularnewline
-    \tabularnewline
-    & \textbf{\large Encadrant \textsc{ISET} :} & \textsc{\large  #7}
-    \tabularnewline
-    \tabularnewline
-    & \textbf{\large Encadrant société :}       & \textsc{\large  #8}
-  \end{tabular}};
+\node[below=7.5cm of pfe, text width=.85\textwidth, align=center, below] (projet) {\Huge{\textbf{#2}}};
+\node[below=1cm of projet] {\large Effectué à : {\sc #3}};
+\node[below=2.5cm of projet, align=center] {\myJury};
 
 %%% \node[left] (logo) at (15.75, -23) {\includegraphics[width=3cm]{images/ISETBZ.png}};
 %%% \node[right] at (11, -22) {\includegraphics[width=3cm]{images/HOST.png}};
 
 \node[align=center] at (10, -24) {%
-\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|}
     \hline
     \multirow{3}{*}{Référence} & Dép. & Génie \'Electrique \\
     \cline{2-3}
-    & A.U. & 2025--2026 \\
+    & A.U. & #4 \\
     \cline{2-3} 
-    & N° & #2 \\
+    & N° & #5 \\
     \hline
-\end{tabular}
-};
+	\end{tabular}};
 
 \node[above=.5cm of projet]{\noindent\makebox[0.6\linewidth]{\resizebox{0.6\linewidth}{2pt}{$\bullet$}}};
 \node[below=.5cm of projet]{\noindent\makebox[0.6\linewidth]{\resizebox{0.6\linewidth}{2pt}{$\bullet$}}};
@@ -364,6 +365,15 @@ emph{(OPT)}}
 \backslash
 def
 \backslash
+au{2026-2027}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
 ref{EI 01-27}
 \end_layout
 
@@ -391,7 +401,7 @@ org{Société}
 \backslash
 def
 \backslash
-president{M.(me) Président}
+president{M.(Mme) Président(e)}
 \end_layout
 
 \begin_layout Plain Layout
@@ -400,7 +410,7 @@ president{M.(me) Président}
 \backslash
 def
 \backslash
-rapporteur{M.(me) Rapporteur}
+rapporteur{M.(Mme) Rapporteur(e)}
 \end_layout
 
 \begin_layout Plain Layout
@@ -409,7 +419,13 @@ rapporteur{M.(me) Rapporteur}
 \backslash
 def
 \backslash
-encadrantISET{M.(me) Encadrant ISET}
+encadrantISET{M.(Mme) Encadrant(e) ISET} % 
+\backslash
+vspace{3pt}
+\backslash
+
+\backslash
+ M.(Mme) Co-encadrant(e) ISET}
 \end_layout
 
 \begin_layout Plain Layout
@@ -418,7 +434,7 @@ encadrantISET{M.(me) Encadrant ISET}
 \backslash
 def
 \backslash
-encadrantIndustriel{M.(me) Encadrant Industriel}
+encadrantExt{M.(Mme) Encadrant(e) Externe}
 \end_layout
 
 \begin_layout Plain Layout
@@ -443,15 +459,13 @@ dateSoutenance{15 juin 2027}
 
 
 \backslash
-myTitlePage{
+newcommand{
 \backslash
-auteur}{
+myJury}{
 \backslash
-ref}{
+theJury{
 \backslash
-titre}{
-\backslash
-org}{
+dateSoutenance}{
 \backslash
 president}{
 \backslash
@@ -459,9 +473,24 @@ rapporteur}{
 \backslash
 encadrantISET}{
 \backslash
-encadrantIndustriel}{
+encadrantExt}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-dateSoutenance}
+myTitlePage{
+\backslash
+auteur}{
+\backslash
+titre}{
+\backslash
+org}{
+\backslash
+au}{
+\backslash
+ref}
 \end_layout
 
 \end_inset
