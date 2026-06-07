@@ -1,8 +1,6 @@
 # Templates of Capstone Project Report (PFE)
  
-![LyX](LyX.png)
- 
-**LaTeX**/**LyX** templates for end-of-studies project reports (*Projet de Fin d'Études*) at the Electrical Engineering Department of [ISET Bizerte](https://www.isetbz.rnu.tn/). Two versions are provided: one in **French** and one in **English**.
+**LyX** templates for end-of-studies project reports (*Projet de Fin d'Études*) at the Electrical Engineering Department of [ISET Bizerte](https://www.isetbz.rnu.tn/). Two versions are provided: one in **French** and one in **English**.
  
 ## Repository Structure
  
@@ -34,3 +32,5 @@ Download and install [**MikTeX**](https://miktex.org/), which provides the full 
 - Launch **LyX** and open either `fr-rapport/` or `en-report/` depending on the language of your report.
 - Export to PDF via **File → Export → PDF (pdflatex)**.
 - Open the resulting PDF with **Sumatra PDF**.
+
+![LyX](LyX.png)
