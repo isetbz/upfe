@@ -2,7 +2,7 @@
  
 ![LyX](LyX.png)
  
-LaTeX/LyX templates for end-of-studies project reports (*Projet de Fin d'Études*) at the Electrical Engineering Department of [ISET Bizerte](https://www.isetbz.rnu.tn/). Two versions are provided: one in **French** and one in **English**.
+**LaTeX**/**LyX** templates for end-of-studies project reports (*Projet de Fin d'Études*) at the Electrical Engineering Department of [ISET Bizerte](https://www.isetbz.rnu.tn/). Two versions are provided: one in **French** and one in **English**.
  
 ## Repository Structure
  
@@ -16,7 +16,7 @@ upfe/
  
 ### Install a LaTeX Distribution
  
-Download and install [**MikTeX**](https://miktex.org/), which provides the full LaTeX engine and package manager for Windows, macOS, and Linux.
+Download and install [**MikTeX**](https://miktex.org/), which provides the full **LaTeX** engine and package manager for Windows, macOS, and Linux.
  
 > [!TIP]
 > During first use, MikTeX will automatically download any missing packages on the fly.
@@ -33,6 +33,4 @@ Download and install [**MikTeX**](https://miktex.org/), which provides the full 
  
 - Launch **LyX** and open either `fr-rapport/` or `en-report/` depending on the language of your report.
 - Export to PDF via **File → Export → PDF (pdflatex)**.
-## License
- 
-This project is licensed under the [MIT License](LICENSE).
+- Open the resulting PDF with **Sumatra PDF**.
