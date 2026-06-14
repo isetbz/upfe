@@ -1225,26 +1225,23 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "default"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 
 \size footnotesize
-\lang french
 University Campus Menzel Abderrahmen P.O.
  Box No.
- 65 Bizerte 7035 Postal Code:
- 7035
+ 65 Bizerte 7035 
 \end_layout
 
 \begin_layout Plain Layout
 \align center
 
 \size footnotesize
-\lang french
 Tel:
- +216 72 57 06 01/+216 72 57 06 00 - Fax:
+ +216 72 57 06 01 - Fax:
  +216 72 572 455 - Email:
  isetbz@isetbz.rnu.tn
 \end_layout

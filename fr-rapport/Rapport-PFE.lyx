@@ -1205,14 +1205,13 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "default"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 
 \size footnotesize
-Campus Universitaire Menzel Abderrahmen BP n°65 Bizerte 7035 CP :
- 7035 
+Campus Universitaire Menzel Abderrahmen BP n°65 Bizerte 7035
 \end_layout
 
 \begin_layout Plain Layout
@@ -1220,7 +1219,7 @@ Campus Universitaire Menzel Abderrahmen BP n°65 Bizerte 7035 CP :
 
 \size footnotesize
 Tél :
- +216 72 57 06 01/+216 72 57 06 00 - Fax :
+ +216 72 57 06 01 - Fax :
  +216 72 572 455 - Email :
  isetbz@isetbz.rnu.tn
 \end_layout
