@@ -386,7 +386,7 @@ ay{2026-2027}
 \backslash
 def
 \backslash
-ref{EI 01-27}
+ref{EI 01.27}
 \end_layout
 
 \begin_layout Plain Layout
@@ -431,7 +431,7 @@ reviewer{Mr.(Mrs.) Reviewer}
 \backslash
 def
 \backslash
-advisor{Mr.(Mrs.) Academic Advisor} % 
+advisor{Mr.(Mrs.) Academic Advisor 
 \backslash
 vspace{3pt}
 \backslash

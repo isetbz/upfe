@@ -84,16 +84,16 @@
   \begin{tabular}{crl}
     \multicolumn{3}{c}{\large Soutenu le #1\ devant le jury :} \\
     \tabularnewline
-    & \textbf{\large Président(e) :}                  & {\sc\large\begin{tabular}{l}#2\end{tabular}}
+    & \textbf{\large Président :}                  & {\sc\large\begin{tabular}{l}#2\end{tabular}}
     \tabularnewline
     \tabularnewline
-    & \textbf{\large Rapporteur(e) :}                 & {\sc\large\begin{tabular}{l}#3\end{tabular}}
+    & \textbf{\large Rapporteur :}                 & {\sc\large\begin{tabular}{l}#3\end{tabular}}
     \tabularnewline
     \tabularnewline
-    & \textbf{\large Encadrant(e)(s) académique(s) :} & {\sc\large\begin{tabular}{l}#4\end{tabular}}
+    & \textbf{\large Encadrant ISET :} & {\sc\large\begin{tabular}{l}#4\end{tabular}}
     \tabularnewline
     \tabularnewline
-    & \textbf{\large Encadrant(e) externe :}          & {\sc\large\begin{tabular}{l}#5\end{tabular}}
+    & \textbf{\large Encadrant Industriel :}          & {\sc\large\begin{tabular}{l}#5\end{tabular}}
   \end{tabular}}
 
 \newcommand{\myTitlePage}[5]{%
@@ -374,7 +374,7 @@ au{2026-2027}
 \backslash
 def
 \backslash
-ref{EI 01-27}
+ref{EI 01.27}
 \end_layout
 
 \begin_layout Plain Layout
@@ -401,7 +401,7 @@ org{Société}
 \backslash
 def
 \backslash
-president{M.(Mme) Président(e)}
+president{M.(Mme) Président}
 \end_layout
 
 \begin_layout Plain Layout
@@ -410,7 +410,7 @@ president{M.(Mme) Président(e)}
 \backslash
 def
 \backslash
-rapporteur{M.(Mme) Rapporteur(e)}
+rapporteur{M.(Mme) Rapporteur}
 \end_layout
 
 \begin_layout Plain Layout
@@ -419,13 +419,13 @@ rapporteur{M.(Mme) Rapporteur(e)}
 \backslash
 def
 \backslash
-encadrantISET{M.(Mme) Encadrant(e) ISET} % 
+encadrantISET{M.(Mme) Encadrant ISET 
 \backslash
 vspace{3pt}
 \backslash
 
 \backslash
- M.(Mme) Co-encadrant(e) ISET}
+ M.(Mme) Co-encadrant ISET}
 \end_layout
 
 \begin_layout Plain Layout
@@ -434,7 +434,7 @@ vspace{3pt}
 \backslash
 def
 \backslash
-encadrantExt{M.(Mme) Encadrant(e) Externe}
+encadrantExt{M.(Mme) Encadrant Industriel}
 \end_layout
 
 \begin_layout Plain Layout
